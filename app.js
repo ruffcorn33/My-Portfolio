@@ -17,9 +17,9 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// app.get('/', (req, res) => {
-//   res.render('portfolio');
-// });
+app.get('/', (req, res) => {
+  res.render('portfolio');
+});
 
 app.post('/send', (req, res) => {
   const output = `
