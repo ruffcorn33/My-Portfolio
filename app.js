@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 // const exphbs = require('express-handlebars');
-// const path = require('path');
+const path = require('path');
 const nodemailer = require('nodemailer');
 
 const app = express();
@@ -11,14 +11,14 @@ const app = express();
 // app.set('view engine', 'handlebars');
 
 // Static folder
-// app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // Body Parser Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.render('portfolio');
+  res.sendFile(path.join(__dirname, 'public.portfolio.html'));
 });
 
 app.post('/send', (req, res) => {
