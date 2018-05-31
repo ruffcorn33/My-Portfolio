@@ -1,0 +1,60 @@
+
+.parallax {
+  position: relative;
+  /* opacity: 0.70; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+} 
+
+.parallax {
+  background-image: url(../images/trees.jpg);
+  min-height: 100%;
+}
+
+.ptext {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  vertical-align: -webkit-baseline-middle;
+}
+
+/* .pbtn {
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  text-align: center;
+  color: var(--light);
+  background-color: transparent;
+  font-size: 30px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.pbtn .border{
+  background-color:#111;
+  color:#fff;
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:100px;
+  padding-right:100px;
+}
+
+.pbtn .border.trans{
+  background-color:transparent;
+  color: var(--light);
+  border-style: solid;
+  border-color: var(--light);
+}  */
+
+.responsive-img {
+  width: 100%;
+  max-width: 60%;
+  height: auto;
+}

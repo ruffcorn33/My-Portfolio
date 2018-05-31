@@ -1,0 +1,11 @@
+
+footer {
+  background-color: var(--dark);
+  text-align: center;
+  width: 100%;
+}
+
+.footer-text {
+  color: var(--light);
+  padding: 1em;
+}

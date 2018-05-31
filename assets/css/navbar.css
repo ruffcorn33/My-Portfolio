@@ -1,0 +1,43 @@
+/* Style the navbar */
+.navbar {
+  top:0px;
+  position:fixed;
+  width: 100%;
+  /* padding: 10px 16px; */
+  /* background: var(--dark); */
+  /* color: var(--light); */
+  background: var(--primary);
+  color: var(--dark);
+  background-size: cover;
+  z-index: 1;
+}
+
+.navbar ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.navbar a {
+  background: var(--primary);
+  background-color: transparent;  
+  display: block;
+  text-decoration: none;
+  font-weight: 900;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 1.90vw;
+  /* box-shadow: var(--shadow); */
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.navbar a:hover {
+  /* background: var(--dark); */
+  color: var(--light);
+}
+

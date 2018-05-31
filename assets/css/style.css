@@ -1,0 +1,209 @@
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.section-trans {
+  background-color: transparent;
+  color: #ddd;
+}
+
+.border {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 80px;
+  margin: 10px;
+}
+
+.border.trans {
+  background-color: transparent;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mt-25 {
+  margin-top: .25em;
+}
+
+.mb-25 {
+  margin-bottom: .25em;
+}
+
+.mt-50 {
+  margin-top: .5em;
+}
+  
+.mb-50 {
+  margin-bottom: .5em;
+}
+
+.mt-75 {
+margin-top: .75em;
+}
+
+.mb-75 {
+  margin-bottom: .75em;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* ABOUT */
+.about-container {
+  display: grid;
+  grid-gap: 0;
+  grid-template-areas:
+  'box-a box-b'
+}
+
+.about-box {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: var(--shadow);
+  padding: 20%;
+}
+
+.box-a {
+  grid-area: box-a;
+  background: var(--primary);
+}
+
+.box-b {
+  grid-area: box-b;
+  background: var(--dark);
+}
+
+.bio, .skills {
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 1.5;
+}
+
+
+/* PORTFOLIO */
+.portfolio {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+  margin-top: 5em;
+}
+
+.portfolio img {
+  width: 800px;
+  height: auto;
+  box-shadow: var(--shadow);
+  position: relative;
+  width: 100%;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  text-align: center;
+}
+
+.portfolio img:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  box-shadow: 0 4px 4px 2px #999, 0 4px 4px 2px #999;
+}
+
+/* CONTACT */
+
+.contact-container {
+  text-align: center;
+  padding: 30px 80px;
+  line-height: 1;
+}
+
+.email-form {
+  max-width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input {
+  height: 2em;
+  margin: .3em;
+  padding: .3em;
+}
+
+input, textarea {
+  background-color: var(--lightgray);
+  color: var(--dark);
+  margin: .3em 0;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: .75em;
+  border: 1px solid var(--lightgray);
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: .5em;
+  border: 1px solid var(--lightgray);
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: var(--primary);
+  color: var(--mediumgray);
+  color: var(--dark);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--dark);
+  color: var(--light)
+}
+
+.cbtn {
+  width: 100%;
+  text-align: center;
+  color: var(--light);
+  background-color: transparent;
+  /* font-size: 30px; */
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.cbtn .border{
+  background-color:#111;
+  color:#fff;
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:100px;
+  padding-right:100px;
+}
+
+@media(max-width: 500px) {
+
+  .about-container{
+    grid-template-areas: 
+      'box-a'
+      'box-b';
+  }
+
+  .about-box {
+    padding: 5%;
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Craig Christensen</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/config.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/parallax.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/parallax.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <div class='navbar'>
+    <ul>
+      <li><a href="#top">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li class="logo mx-auto"><img class="responsive" src="/assets/images/Craig_logo_black.png" alt="Craig Christensen" height="125em"></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div id="top"></div>
+  <!-- first parallax image -->
+  <div class="parallax">
+    <div class="ptext">
+      <p class="text-medium primary font-bold mt-0">experienced</p>
+      <p class="text-big light font-bold mt-0">software engineer</p>
+      <p class="text-medium primary font-bold mt-0">restarting career as a</p>
+      <p class="text-big light font-bold mt-0">full-stack web developer</p>
+    </div>
+    <!-- <div class="pbtn font-black">
+      <span class="border trans text-medium">
+          full-stack web developer
+      </span>
+    </div> -->
+  </div>
+  <!-- ABOUT -->
+  <div id="about"></div>
+  <section class="about-container">
+    <div class="about-box box-a">
+      <p class="text-big light font-black">About.</p>
+      <p class="bio text-small dark font-reg"> I am a senior software engineer with 20 years experience developing client/server applications.  I recently retooled myself to become a full-stack web developer.</p>
+    </div>
+    <div class="about-box box-b">
+      <p class="text-big light font-black">Using.</p>
+      <p class="skills text-small light font-reg"> JavaScript HTML5 CSS3 NodeJS ExpressJS ReactJS Handlebars Boostrap JQuery AJAX JSON MySQL Sequelize Mocha Chai MongoDB Mongoose S3 GIT GitHub Firebase OLAP </p>
+    </div>
+  </section>
+  <!-- PORTFOLIO -->
+  <div id="portfolio"></div>
+  <section class="portfolio">
+    <a target="_blank" href="https://ancestrynom.herokuapp.com/"><img src="assets/images/ancestrydotnom_600x400.png" alt=""></a>
+    <a target="_blank" href="https://travelbuddy-8ad21.firebaseapp.com/index.html"><img src="assets/images/TravelBuddy.jpg" alt="TravelBuddy"></a>
+    <a target="_blank" href="https://fabulist.herokuapp.com/"><img src="assets/images/fabulist.png" alt="Fabulist"></a>
+    <a target="_blank" href="https://rocky-sands-95945.herokuapp.com/"><img src="assets/images/burger.jpg" alt="Burger"></a>
+    <a target="_blank" href="https://ruffcorn33.github.io/week-4-game/"><img src="assets/images/crystals.jpg" alt="Crystals"></a>
+    <a target="_blank" href="https://ruffcorn33.github.io/Giphy-Search-and-Display/"><img src="assets/images/giphy.jpg" alt="Giphy"></a>
+    <a target="_blank" href="https://github.com/ruffcorn33/Orinoco"><img src="assets/images/orinoco.jpg" alt=""></a>
+    <a target="_blank" href="https://github.com/ruffcorn33/FriendFinder"><img src="assets/images/FriendFinder_2_600x400.jpg" alt="Friend Finder"></a>
+    <a target="_blank" href="https://obscure-shore-87680.herokuapp.com/"><img src="assets/images/clicky.png" alt=""></a>
+  </section>
+
+  <div id="contact"></div>  
+  <section class="contact-container center">
+    <p class="text-big primary font-black">Get in touch.</p>
+    <!-- <p class="text-small dark font-reg">Drop me a line and tell me how I can help.</p> -->
+    <form class="email-form" action="send" method="POST" enctype="text/plain">
+      <input class="text-small mx-auto" type="text" name="name" placeholder="  Name:"><br>
+      <input class="text-small mx-auto" type="text" name="company" placeholder="  Company:"><br>      
+      <input class="text-small mx-auto" type="text" name="email" placeholder="  Email:"><br>
+      <textarea 
+        class="text-small"
+        name="message"
+        rows="3"
+        cols="60"
+        placeholder=" Write something..."
+      ></textarea><br>
+      <input class="cbtn text-small font-bold" type="submit" value="Send" />
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="center">
+    <p class="footer-text text-small">&copy Craig Christensen 2018</p>
+  </footer>
+
+</body>
+</html>
+
