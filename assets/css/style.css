@@ -195,6 +195,10 @@ input[type=submit]:hover {
   padding-right:100px;
 }
 
+.email-link, .resume-link {
+  
+}
+
 @media(max-width: 500px) {
 
   .about-container{
