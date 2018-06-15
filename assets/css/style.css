@@ -117,10 +117,6 @@ margin-top: .75em;
   box-shadow: 0 4px 4px 2px #999, 0 4px 4px 2px #999;
 }
 
-a[title]:hover:after {
-  content: attr(title); padding: 4px 8px; color: #333; position: absolute; left:0; top: 100%; z-index: 20px
-}
-
 /* CONTACT */
 
 .contact-container {
